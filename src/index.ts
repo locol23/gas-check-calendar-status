@@ -2,11 +2,6 @@ import getSetting from './getSetting';
 
 declare var global: any;
 
-// global.createNewFile = (): void => {
-//   const ss = SheetService.createInitialFile('New file');
-//   ss.getRange('A2').setValue('Happy gas!');
-// };
-
 global.checkCalendarStatus = () => {
   const settings = getSetting();
   const cal = CalendarApp.getCalendarById(settings[0]['calendarId']);
